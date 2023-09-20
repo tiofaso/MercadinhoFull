@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6c757d;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h1{
+    color: #d63384;
+}
+
+h2{
+    color: #d63384;
+}
+
+hr{
+    margin-top: 30px;
+}
+#cadastraprodutos{
+    width: 500px;
+    margin-top: 30px;
+}
+
+#mostraprodutos{
+    width: 500px;
+}
+
+#principal{
+    width: 500px;
+    min-height: 200px;
+    background-color: #fceaf1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nome{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.preco{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.quantidade{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.descricao{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.descricao textarea {
+    margin-top: 5px;
+}
+
+.cadastrar {
+    text-align: right;
+    padding: 5px;
+    position: relative;
+    width: auto;
+}
+
+button,input[type=submit]  {
+    background-color: #d63384;
+    color: #fff;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-weight: 100;
+    padding: 3px;
+}
+
+thead {
+    background-color:  rgb(235, 186, 223);
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color:  rgb(253, 222, 246);
+}

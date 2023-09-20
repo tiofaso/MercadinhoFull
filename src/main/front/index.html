@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho Full</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="principal">
+        <h1>Mercadinho Full</h1>
+        <p>Seja bem-vinde ao controle de estoque do mercadinho full!</p>
+        <p>Escolha uma das opções a seguir:</p>
+        <button onclick="mostraMenu('cadastraprodutos')">cadastrar produtos</button>
+        <button onclick="mostraMenu('mostraprodutos')">mostrar estoque</button>
+        <hr/>
+        <!-- cadastro de produtos - INÍCIO -->
+        <div id="cadastraprodutos" style="display: none;">
+        <h2>Cadastrar produtos</h2>
+        <form id="cadastro">
+            <div class="nome">
+                <label for="nomeProduto">Nome do produto</label>
+                <input type="text" name="nomeProduto" id="nomeProduto">
+            </div>
+            
+            <div class="preco">
+                <label for="precoProduto">Preço do produto</label>
+                <input type="text" name="precoProduto" id="precoProduto">
+            </div>
+
+            <div class="quantidade">
+                <label for="quantidadeProduto">Quantitade do produto</label>
+                <select id="quantidadeProduto" name="quantidadeProduto">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <div class="descricao">
+                <div><label for="descricaoProduto">Descrição do produto</label></div>
+                <div><textarea rows="4" cols="50" name="descricaoProduto" id="descricaoProduto"></textarea></div>
+            </div>
+            
+            <div class="cadastrar">
+                <input type="submit" value="cadastrar" onclick="mensagem()">
+            </div>
+            
+        </form>
+        </div>
+        <!-- cadastro de produtros - FIM -->
+        
+        <!-- mostra produtos - INÍCIO -->
+        <div id="mostraprodutos" style="display: none;">
+        <h2>Estoque atual</h2>
+        <table id="lista">
+            <thead>
+                <th>Id</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Descrição</th>
+            </thead>
+
+            <tbody id="listaProdutos">
+            </tbody>
+        </table>
+        </div>
+        <!-- mostra produtos - FIM -->
+        <script src="js/menu.js"></script>
+        <script src="js/cadastro.js"></script>
+        <script src="js/listaEstoque.js"></script>
+    </div>
+</body>
+</html>
