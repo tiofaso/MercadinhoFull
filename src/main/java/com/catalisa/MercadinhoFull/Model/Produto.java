@@ -1,6 +1,5 @@
 package com.catalisa.MercadinhoFull.Model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
