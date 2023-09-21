@@ -13,6 +13,7 @@
         <p>Escolha uma das opções a seguir:</p>
         <button onclick="mostraMenu('cadastraprodutos')">cadastrar produtos</button>
         <button onclick="mostraMenu('mostraprodutos')">mostrar estoque</button>
+        <button onclick="mostraMenu('mostraprodutoid')">mostrar produto individual</button>
         <hr/>
         <!-- cadastro de produtos - INÍCIO -->
         <div id="cadastraprodutos" style="display: none;">
@@ -65,7 +66,7 @@
                 <th>Id</th>
                 <th>Produto</th>
                 <th>Preço</th>
-                <th>Quantidade</th>
+                <th>Qtde</th>
                 <th>Descrição</th>
             </thead>
 
@@ -74,9 +75,39 @@
         </table>
         </div>
         <!-- mostra produtos - FIM -->
+
+        <!-- mostra produto por id - INÍCIO -->
+        <div id="mostraprodutoid" style="display: none;">
+            <p>Para ver um item de forma individual escolha um dos links abaixo:</p>
+                <ul>
+                    <li><a href="?id=1">Produto 1</a></li>
+                    <li><a href="?id=2">Produto 2</a></li>
+                    <li><a href="?id=3">Produto 3</a></li>
+                    <li><a href="?id=4">Produto 4</a></li>
+                </ul>
+        
+            <p><strong>Importante:</strong> essa lista não é gerada automaticamente. Está apenas listando os itens presentes na base inicial e testar a busca inividual. Caso queira adicionar mais itens, vai ser preciso <strong>adicinar manualmente o id na url</strong>.</p>
+        
+            <h2>Produto escolhido</h2>
+               <table id="lista">
+                    <thead>
+                        <th>Id</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Qtde</th>
+                        <th>Descrição</th>
+                    </thead>
+            
+                    <tbody id="listaProdutoId">
+                    </tbody>
+                </table>
+         </div>
+        <!-- mostra produto por id - FIM -->
+
         <script src="js/menu.js"></script>
         <script src="js/cadastro.js"></script>
         <script src="js/listaEstoque.js"></script>
+        <script src="js/listaUmItem.js"></script>
     </div>
 </body>
 </html>

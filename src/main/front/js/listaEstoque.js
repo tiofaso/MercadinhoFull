@@ -8,7 +8,7 @@ fetch("http://localhost:8080/api/mercadinhofull").then((data)=>{
               <tr>
                   <th scope="row">${values.id} </td>
                   <td>${values.nomeProduto}</td> 
-                  <td>${values.precoProduto}</td> 
+                  <td>R$${values.precoProduto}</td> 
                   <td>${values.quantidadeProduto} </td>
                   <td>${values.descricaoProduto}</td> 
               </tr>
